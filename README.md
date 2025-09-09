@@ -21,8 +21,8 @@ Example of destructuring an Object:
 bash
 const student = {
     id: 1,
-    name: 'John Doe',
-    age: 30
+    name: 'Jashim',
+    age: 20
 }
 
 const {id, name, age} = student;
@@ -31,7 +31,7 @@ const {id, name, age} = student;
 Example of destructuring an Array:
 
 bash
-const friends = ['John', 'Jane', 'Jimi'];
+const friends = ['japan', 'jahir', 'Jishan'];
 
 const [firstFriend, secondFriend, thirdFriend] = friends;
 
@@ -43,8 +43,8 @@ const [firstFriend, secondFriend, thirdFriend] = friends;
 Example of string concatenation:
 
 bash
-const firstName = 'John';
-const lastName = 'Doe',
+const firstName = 'Jashi';
+const lastName = 'Uddin',
 
 console.log('Hi ' + firstName + ' ' + lastname);
 
@@ -52,8 +52,8 @@ console.log('Hi ' + firstName + ' ' + lastname);
 Example of template literals:
 
 bash
-const firstName = 'John';
-const lastName = 'Doe',
+const firstName = 'Jashim';
+const lastName = 'Uddin',
 
 console.log(`Hi ${firstName} ${lastName}`);
 

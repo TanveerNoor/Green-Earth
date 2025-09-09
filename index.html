@@ -47,3 +47,43 @@
             </div>
         </div>
     </header>
+        
+    <main>
+
+        <!-- ====================== Banner Area ==================== -->
+
+        <section class="banner-area py-[100px] bg-[#cff0dc] relative">
+            <div class="w-11/12 lg:w-full max-w-[1650px] mx-auto">
+                <div class="banner-inner space-y-4 text-center">
+                    <h1 class="text-5xl font-bold text-[#1f2937]">Plant a Tree, Grow a Future</h1>
+                    <p class="text-base text-[#1f2937] opacity-80">Join our mission to plant 1 million trees and make the Earth greener for future<br class="hidden lg:block"> generations.</p>
+                    <a href="./index.html" class="mt-5 inline-block text-base rounded-full bg-[#facc15] text-[#15803D] py-3 px-5 font-medium">Plant a Tree</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====================== Choose Your Trees ==================== -->
+         
+         <section class="choose-trees-area bg-[#f0fdf4] py-14 lg:py-[100px]">
+            <div class="w-11/12 lg:w-full max-w-[1650px] mx-auto">
+                <h3 class="text-3xl font-semibold text-center mb-10 text-[#1f2937]">Choose Your Trees</h3>
+                <div class="choose-trees-inner grid grid-cols-1 lg:grid-cols-12 gap-[30px]">
+                    <aside class="categories col-span-full lg:col-span-2 order-2 lg:order-1 text-center lg:text-left">
+                        <h4 class="text-xl font-semibold">Categories</h4>
+                        <ul id="categories-wrapper" class="mt-4 space-y-2">
+                            <div class="category-label"><li onclick="getAllTrees('https://openapi.programming-hero.com/api/plants')" class="category-li text-base cursor-pointer p-2 active">All Trees</li></div>
+                        </ul>
+                    </aside>
+
+                    <div id="loading-bar" class="col-span-full lg:col-span-8 order-3 lg:order-2 text-center hidden"><span class="loading loading-bars loading-xl"></span></div>
+
+                    <section id="tree-showcase-wrapper" class="tree-showcase col-span-full lg:col-span-8 grid grid-cols-1 lg:grid-cols-3 gap-[30px] order-3 lg:order-2"></section>
+
+                    <aside class="green-earth-cart col-span-full lg:col-span-2 bg-white rounded-2xl p-4 order-1 lg:order-3">
+                        <h3 class="text-xl font-semibold text-center lg:text-left">Your Cart</h3>
+                        <div id="cart-item-wrapper" class="cart-item-wrapper"></div>
+                        <div id="cart-total-wrapper" class="cart-total flex justify-between border-t border-[#1f29371a] text-base font-medium text-[#1f2937] mt-2 pt-2 hidden"></div>
+                    </aside>
+                </div>
+            </div>
